@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, useEffect } from "react";
+import React, { useState, type ChangeEvent, useEffect } from "react";
 
 interface PaginationProps {
   totalItems: number;

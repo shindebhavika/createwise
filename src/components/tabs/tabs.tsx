@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as TabsPrimitive from "@radix-ui/react-tabs"
 
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 function Tabs({
   className,
@@ -34,8 +34,9 @@ function TabsList({
 
 function TabsTrigger({
   className,
+  children,
   ...props
-}: React.ComponentProps<typeof TabsPrimitive.Trigger>) {
+}: React.ComponentProps<typeof TabsPrimitive.Trigger> & { children: React.ReactNode }) {
   return (
     <TabsPrimitive.Trigger
       data-slot="tabs-trigger"
@@ -44,9 +45,12 @@ function TabsTrigger({
         className
       )}
       {...props}
-    />
-  )
+    >
+      {children}
+    </TabsPrimitive.Trigger>
+  );
 }
+
 
 function TabsContent({
   className,

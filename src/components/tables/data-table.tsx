@@ -198,7 +198,7 @@ export const columns: ColumnDef<Article>[] = [
           <DropdownMenuTrigger asChild>
             <button className="h-8 w-8 p-0">
               <span className="sr-only">Open menu</span>
-              <Button variant="outline" className={`capitalize ${getActionStyles(action)}`}>
+              <Button variant="outline" className={`capitalize `}>
                 {action}
               </Button>
             </button>
@@ -216,7 +216,7 @@ export const columns: ColumnDef<Article>[] = [
   {
     accessorKey: "Publish",
     enableHiding: false,
-    cell: ({ row }) => (
+    cell: ({}) => (
       <DropdownMenu >
         <DropdownMenuTrigger asChild>
           <button className="flex items-center space-x-2 focus:outline-none  pl-4">
@@ -237,7 +237,7 @@ export const columns: ColumnDef<Article>[] = [
 ];
 
 // Main Component
-export function DataTableDemo({ data }: { data: Article[] }) {
+export function DataTableDemo({ data }: { data: any[] }) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([]);
   const [columnVisibility, setColumnVisibility] = React.useState<VisibilityState>({});

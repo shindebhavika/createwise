@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/tabs/tabs";
@@ -8,6 +8,7 @@ import { useTableContext } from "../lib/TableContext";
 function Dashbord() {
   const [currentTab, setCurrentTab] = useState("Generated");
   const {data} =useTableContext()
+  
   // Function to filter data based on the current tab
   const getFilteredData = () => {
     switch (currentTab) {
