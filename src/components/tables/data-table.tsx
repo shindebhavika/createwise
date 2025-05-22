@@ -15,7 +15,7 @@ import type {
   SortingState,
   VisibilityState,
 } from "@tanstack/react-table";
-import { ChevronDown, ChevronsUpDown ,ChevronsDown , ArrowUp, ArrowDown, ArrowUpDown} from "lucide-react";
+import { ChevronDown, ChevronsDown , ArrowUp, ArrowDown, ArrowUpDown} from "lucide-react";
 import { IconBrandWordpress } from "@tabler/icons-react";
 
 import { Button } from "../ui/button";
@@ -178,8 +178,8 @@ export const columns: ColumnDef<Article>[] = [
     accessorKey: "action",
     enableHiding: false,
     cell: ({ row }) => {
-      const action = row.getValue("action");
-
+      const action = row.getValue("action") as string;
+    
       const getActionStyles = (action: string) => {
         switch (action?.toLowerCase()) {
           case "view":
@@ -192,13 +192,13 @@ export const columns: ColumnDef<Article>[] = [
             return "bg-gray-100 text-gray-600";
         }
       };
-
+    
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <button className="h-8 w-8 p-0">
               <span className="sr-only">Open menu</span>
-              <Button variant="outline" className={`capitalize `}>
+              <Button variant="outline" className={`capitalize ${getActionStyles(action)}`}>
                 {action}
               </Button>
             </button>
@@ -212,6 +212,7 @@ export const columns: ColumnDef<Article>[] = [
         </DropdownMenu>
       );
     },
+    
   },
   {
     accessorKey: "Publish",
