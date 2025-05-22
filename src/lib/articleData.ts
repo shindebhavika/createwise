@@ -1,0 +1,178 @@
+// articleData.ts
+
+export type Article = {
+    id: string;
+    amount: number;
+    status: string;
+    email: string;
+    article: string;
+    keyword: string;
+    traffic: number;
+    words: number;
+    createdOn: string;
+    action: string;
+    publish:  string;
+  };
+  
+  export const initialData: Article[] =
+   [
+    {
+      id: "41yt",
+      amount: 316,
+      status: "scheduled",
+      email: "ken99@example.com",
+      article: "How to Improve Your Skills in League of Legends",
+      keyword: "league of legends [2240000]",
+      traffic: 2240000,
+      words: 4575,
+      createdOn: "20 hours ago",
+      action: "View",
+      publish:"Schedule",
+    },
+    {
+      id: "2",
+      amount: 242,
+      status: "scheduled",
+      email: "Abe45@example.com",
+      article: "How to Master Last Hitting in League of Legends",
+      keyword: "league of legends [2240000]",
+      traffic: 2240000,
+      words: 3480,
+      createdOn: "21 hours ago",
+      action: "View",
+      publish:"Schedule",
+    },
+    {
+      id: "3",
+      amount: 837,
+      status: "scheduled",
+      email: "Monserrat44@example.com",
+      article: "7 Tips for Better Teamplay in League of Legends",
+      keyword: "league of legends [2240000]",
+      traffic: 2240000,
+      words: 2676,
+      createdOn: "a day ago",
+      action: "View",
+      publish:"Schedule",
+    },
+    {
+        id: "41yt",
+        amount: 316,
+        status: "generated",
+        email: "ken99@example.com",
+        article: "How to Improve Your Skills in League of Legends",
+        keyword: "league of legends [2240000]",
+        traffic: 2240000,
+        words: 4575,
+        createdOn: "20 hours ago",
+        action: "View",
+        publish:"Schedule",
+      },
+      {
+        id: "d2",
+        amount: 242,
+        status: "generated",
+        email: "Abe45@example.com",
+        article: "How to Master Last Hitting in League of Legends",
+        keyword: "league of legends [2240000]",
+        traffic: 2240000,
+        words: 3480,
+        createdOn: "21 hours ago",
+        action: "View",
+        publish:"Schedule",
+      },
+      {
+        id: "3",
+        amount: 837,
+        status: "published",
+        email: "Monserrat44@example.com",
+        article: "7 Tips for Better Teamplay in League of Legends",
+        keyword: "league of legends [2240000]",
+        traffic: 2240000,
+        words: 2676,
+        createdOn: "a day ago",
+        action: "View",
+        publish:"Schedule",
+      },
+      {
+        id: "4",
+        amount: 874,
+        status: "published",
+        email: "Silas22@example.com",
+        article: "Top Virtual Executive Assistant Services (2024)",
+        keyword: "virtual executive assistant [2900]",
+        traffic: 2900,
+        words: 2408,
+        createdOn: "1 Oct, 24",
+        action: "View",
+        publish:"Schedule",
+      },
+      {
+        id: "5",
+        amount: 721,
+        status: "published",
+        email: "carmella@example.com",
+        article: "Unlimited Graphics Design Solutions",
+        keyword: "unlimited graphic design services [390]",
+        traffic: 390,
+        words: 1793,
+        createdOn: "---",
+        action: "View",
+        publish:"Schedule",
+      },
+      {
+        id: "6",
+        amount: 653,
+        status: "generated",
+        email: "louis@example.com",
+        article: "Top Amazon Payment Methods for Quick Access to Funds",
+        keyword: "amazon payment methods [390]",
+        traffic: 3600,
+        words: 2647,
+        createdOn: "---",
+        action: "View",
+        publish:"Schedule",
+      },
+      {
+        id: "7",
+        amount: 589,
+        status: "archived",
+        email: "julia@example.com",
+        article:
+          "Backlinks 101: What are backlinks and why they're important [Free template]",
+        keyword: "backlinks [390]",
+        traffic: 8100,
+        words: 2261,
+        createdOn: "---",
+        action: "View",
+        publish:"Schedule",
+      },
+      {
+        id: "8",
+        amount: 444,
+        status: "generated",
+        email: "blake@example.com",
+        article: "7 Leading AI SEO Tools in 2024 (Ranked & Compared)",
+        keyword: "ai seo software [390]",
+        traffic: 880,
+        words: 1543,
+        createdOn: "---",
+        action: "View",
+        publish:"Schedule",
+      },
+      {
+        id: "9",
+        amount: 911,
+        status: "archived",
+        email: "zoe@example.com",
+        article: "Unlimited Graphic Design Services You Can Rely On",
+        keyword: "unlimited graphic design services [390]",
+        traffic: 390,
+        words: 1974,
+        createdOn: "---",
+        action: "View",
+        publish:"Schedule",
+      },
+    // ... rest of your articles
+  ];
+  
